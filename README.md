@@ -10,8 +10,19 @@ Moved to settings_.
 
 .. _settings: http://cookiecutter-django.readthedocs.io/en/latest/settings.html
 
-Basic Commands
+Getting started
 --------------
+
+This application development is done within Docker containers. It should be quick to get up and running with the application.
+
+`docker-compose -f local.yml up`
+DB migration is already taken care of., So no need to execute them.
+
+On a different terminal, execute management commands:
+````
+docker-compose -f local.yml run --rm django python manage.py createsuperuser
+#django is the django app container name
+````
 
 Setting Up Your Users
 ---
