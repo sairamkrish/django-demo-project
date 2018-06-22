@@ -44,6 +44,8 @@ services:
     image: mailhog/mailhog:v1.0.0
     ports:
       - "8025:8025"
+    environment:
+      - MH_UI_WEB_PATH=mailhog
     networks:
       - demo-app
 
