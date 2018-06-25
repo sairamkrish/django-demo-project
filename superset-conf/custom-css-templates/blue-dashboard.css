@@ -4,7 +4,7 @@ body{
 }
 
 .btn-default{
-    border-color: blue;
+    border-color: #3182bd;
 }
 
 .btn-default:active:hover, .btn-default.active:hover, .open > .dropdown-toggle.btn-default:hover, .btn-default:active:focus, .btn-default.active:focus, .open > .dropdown-toggle.btn-default:focus, .btn-default:active.focus, .btn-default.active.focus, .open > .dropdown-toggle.btn-default.focus {
@@ -12,7 +12,7 @@ body{
 }
 
 .btn-default:hover{
-    color: blue;
+    color: #3182bd;
     background-color: white;
 }
 
@@ -32,12 +32,12 @@ body{
 }
 
 .navbar-inverse .navbar-nav > li > a{
-    border-bottom-color: blue !important;
+    border-bottom-color: #3182bd !important;
 }
 
 .navbar-inverse .navbar-nav > li > a:hover{
-    border-bottom-color: blue;
-    color:blue;
+    border-bottom-color: #3182bd;
+    color:#3182bd;
 }
 
 .navbar-inverse .navbar-nav > .open > a:focus {
@@ -45,7 +45,7 @@ body{
 }
 
 .dropdown-menu > li > a:hover{
-    color:blue;
+    color:#3182bd;
     background: white;
 }
 
@@ -58,7 +58,7 @@ body{
 
 .gridster div.widget {
     transition: background-color 0.5s ease;
-    background-color: blue;
+    background-color: #3182bd;
     border: 2px solid white;
     border-radius: 15px;
     box-shadow: none;
@@ -80,7 +80,7 @@ h2 {
 }
 
 h1{
-    color:blue;
+    color:#3182bd;
 }
 
 .nvd3 text {
@@ -93,7 +93,7 @@ h1{
 /* tables */
 
 table {
-    color: blue !important;
+    color: #3182bd !important;
 }
 
 .slice_container:hover{
@@ -103,31 +103,31 @@ table {
     border-bottom-width:1px;
     border-style: solid;
     border-radius: 0 0px 15px 15px;
-    border-color: blue;
+    border-color: #3182bd;
 }
 
 /* world graph */
 
 .datamaps-bubble {
-    fill:blue !important;
+    fill:#3182bd !important;
     stroke:white !important;
 }
 
 .datamaps-hoverover {
-    box-shadow: 1px 1px 5px blue !important; 
-    color: blue;
+    box-shadow: 1px 1px 5px #3182bd !important; 
+    color: #3182bd;
 }
 
 .hoverinfo {
     padding: 4px; 
     border-radius: 1px; 
-    box-shadow: 1px 1px 5px blue; 
+    box-shadow: 1px 1px 5px #3182bd; 
     font-size: 12px; 
     border: 1px solid #CCC; 
 }
 
 .datamaps-subunit:hover{
-  fill: blue !important;
+  fill: #3182bd !important;
 }
 
 .datamaps-subunit:not(:hover){
@@ -138,5 +138,5 @@ table {
 
 text.big{
     stroke: white !important;
-    fill: blue !important;
+    fill: #3182bd !important;
 }
