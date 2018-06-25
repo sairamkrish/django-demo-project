@@ -1,0 +1,153 @@
+body{
+    background: white;
+    font-family: Courier, Monaco, monospace;
+}
+
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+    text-decoration: none;
+    color: white !important;
+    background-color: red !important;
+}
+
+.btn-default{
+    border-color: red;
+}
+
+.btn-default:active:hover, .btn-default.active:hover, .open > .dropdown-toggle.btn-default:hover, .btn-default:active:focus, .btn-default.active:focus, .open > .dropdown-toggle.btn-default:focus, .btn-default:active.focus, .btn-default.active.focus, .open > .dropdown-toggle.btn-default.focus {
+    background-color: red;
+    color: white;
+    border-color: red;
+}
+
+.btn-default:hover{
+    color: white !important;
+    background-color: red;
+    border-color: red;
+}
+
+/* navbar */
+
+.navbar {
+    box-shadow: none;
+}
+
+.navbar {
+    transition: opacity 0.5s ease;
+    opacity: 1;
+}
+
+.navbar:hover {
+    opacity: 1;
+}
+
+.navbar-inverse .navbar-nav > li > a{
+    border-bottom-color: red !important;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover{
+    border-bottom-color: red;
+    color:red;
+}
+
+.navbar-inverse .navbar-nav > .open > a:focus {
+    color:red;
+    background-color: white;
+}
+
+.dropdown-menu > li > a:hover{
+    color:red;
+    background: white;
+}
+
+
+/* chart */
+.chart-header .header{
+    font-weight: normal;
+    font-size: 12px;
+    color: white !important;
+}
+
+.gridster div.widget {
+    transition: background-color 0.5s ease;
+    background-color: red;
+    border: 2px solid white;
+    border-radius: 15px;
+    box-shadow: none;
+}
+
+.gridster div.widget:hover {
+    
+}
+
+.pull-right a{
+    color: white;
+}
+
+/* text */
+
+h2 {
+    color: white;
+    font-size: 52px;
+}
+
+h1{
+    color:red;
+}
+
+.nvd3 text {
+    font-size: 12px;
+    font-family: inherit;
+}
+
+/* graph */
+
+/* tables */
+
+table {
+    color: red !important;
+}
+
+.slice_container:hover{
+    border-top-width:0px;
+    border-right-width:1px;
+    border-left-width:1px;
+    border-bottom-width:1px;
+    border-style: solid;
+    border-radius: 0 0px 15px 15px;
+    border-color: red;
+}
+
+/* world graph */
+
+.datamaps-bubble {
+    fill:red !important;
+    stroke:white !important;
+}
+
+.datamaps-hoverover {
+    box-shadow: 1px 1px 5px red !important; 
+    color: red;
+}
+
+.hoverinfo {
+    padding: 4px; 
+    border-radius: 1px; 
+    box-shadow: 1px 1px 5px red; 
+    font-size: 12px; 
+    border: 1px solid #CCC; 
+}
+
+.datamaps-subunit:hover{
+  fill: red !important;
+}
+
+.datamaps-subunit:not(:hover){
+  fill: #ccc !important;
+}
+
+/**/
+
+text.big{
+    stroke: white !important;
+    fill: red !important;
+}
