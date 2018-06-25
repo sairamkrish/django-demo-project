@@ -35,6 +35,31 @@ Setting Up Your Users
 
 For convenience, you can keep your normal user logged in on Chrome and your superuser logged in on Firefox (or similar), so that you can see how the site behaves for both kinds of users.
 
+Superset database initialization
+---
+
+On AWS EC2 or linux instance, need to grant write access to superset data directory
+`chmod 777 superset-conf/data`
+
+Superset needs to initialize the database and create admin user account. Please execute the following command
+
+`docker exec -it django-demo-project_superset_1 superset-init`
+
+django-demo-project_superset_1 - this is name generated automatically based on our local.yml
+
+If you like to load examples:
+`docker exec -it django-demo-project_superset_1 superset load_examples`
+
+#### Connecting superset with external postgres
+
+
+In datasources, add following SQLAlchemy URI : 
+`postgresql://debug:debug@postgres:5432/demoapp`
+
+##### Command line connection to docker postgres 
+`psql -h localhost -U debug -d demoapp`
+
+
 Test coverage
 ---
 
