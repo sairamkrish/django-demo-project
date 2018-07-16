@@ -67,6 +67,7 @@ THIRD_PARTY_APPS = [
     'allauth.account',
     'allauth.socialaccount',
     'rest_framework',
+    'django_keycloak.apps.KeycloakAppConfig',
 ]
 LOCAL_APPS = [
     'demoapp.users.apps.UsersAppConfig',
@@ -87,14 +88,16 @@ MIGRATION_MODULES = {
 # https://docs.djangoproject.com/en/dev/ref/settings/#authentication-backends
 AUTHENTICATION_BACKENDS = [
     'django.contrib.auth.backends.ModelBackend',
-    'allauth.account.auth_backends.AuthenticationBackend',
+    'django_keycloak.auth.backends.KeycloakAuthorizationCodeBackend',    
 ]
+#     'allauth.account.auth_backends.AuthenticationBackend',
+
 # https://docs.djangoproject.com/en/dev/ref/settings/#auth-user-model
 AUTH_USER_MODEL = 'users.User'
 # https://docs.djangoproject.com/en/dev/ref/settings/#login-redirect-url
 LOGIN_REDIRECT_URL = 'users:redirect'
 # https://docs.djangoproject.com/en/dev/ref/settings/#login-url
-LOGIN_URL = 'account_login'
+LOGIN_URL = 'http://192.168.1.47:6060/auth'
 
 # PASSWORDS
 # ------------------------------------------------------------------------------
@@ -134,6 +137,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'django_keycloak.middleware.BaseKeycloakMiddleware',
 ]
 
 # STATIC

@@ -4,6 +4,7 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.views.generic import TemplateView
 from django.views import defaults as default_views
+from django_keycloak import views as keycloak_views
 
 urlpatterns = [
     path("", TemplateView.as_view(template_name="pages/home.html"), name="home"),
@@ -20,6 +21,10 @@ urlpatterns = [
         include("demoapp.users.urls", namespace="users"),
     ),
     path("accounts/", include("allauth.urls")),
+    path("login", keycloak_views.Login.as_view(), name="keycloak_login"),
+    path("login-complete",keycloak_views.LoginComplete.as_view(),name="login-complete"),
+    path("logout", keycloak_views.Logout.as_view(), name='keycloak_logout'),
+    
     # Your stuff: custom urls includes go here
 ] + static(
     settings.MEDIA_URL, document_root=settings.MEDIA_ROOT
